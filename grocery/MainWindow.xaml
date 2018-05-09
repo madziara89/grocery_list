@@ -1,0 +1,57 @@
+﻿<Window x:Class="grocery.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:grocery"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="350" MinWidth="525" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Add receipt" IsSelected="True">
+                <Grid Background="White">
+                    <TextBox x:Name="receiptNo" HorizontalAlignment="Left" Margin="10,7,0,0" TextWrapping="Wrap" Text="no." Width="38" Height="23" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <TextBox x:Name="shop" HorizontalAlignment="Left" Margin="53,7,0,0" TextWrapping="Wrap" Text="shop" Width="83" Height="23" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <TextBox x:Name="date" HorizontalAlignment="Left" Margin="141,7,0,0" TextWrapping="Wrap" Text="date" Width="91" Height="23" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <TextBox x:Name="time" HorizontalAlignment="Left" Margin="237,7,0,0" TextWrapping="Wrap" Text="time" Width="74" Height="23" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <TextBox x:Name="whoPaid" HorizontalAlignment="Left" Margin="316,7,0,0" TextWrapping="Wrap" Text="who" Width="39" Height="23" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <TabControl Margin="0,35,0,54" HorizontalAlignment="Left" Width="311">
+                        <TabItem x:Name="fruitsVegetablesTab" Header="Fruits, Vegetables" Margin="-2,0,-2,-1">
+                            <Grid Background="White">
+                                <ScrollViewer>
+                                    <StackPanel/>
+                                </ScrollViewer>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="breadTab" Header="Bread">
+                            <Grid Background="White">
+                                <ScrollViewer>
+                                    <StackPanel/>
+                                </ScrollViewer>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                    <ScrollViewer Margin="316,35,10,75">
+                        <StackPanel x:Name="receiptList" Background="#FFF1F1F1"/>
+                    </ScrollViewer>
+                    <TextBlock x:Name="sumText" HorizontalAlignment="Left" Margin="316,0,0,54" TextWrapping="Wrap" Text="Sum:" VerticalAlignment="Bottom" Width="29"/>
+                    <TextBlock x:Name="cost" Margin="350,0,66,54" TextWrapping="Wrap" Text="0,00 zł" VerticalAlignment="Bottom" TextAlignment="Right"/>
+                    <Button x:Name="proceedButton" Content="Proceed" HorizontalAlignment="Right" Margin="0,0,10,54" VerticalAlignment="Bottom" Width="42" Height="16" FontSize="8" Click="ProceedButtonClick"/>
+                    <TextBox x:Name="itemBarcode" HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" Text="" Width="142" Height="23" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <TextBox x:Name="itemQty" HorizontalAlignment="Left" Margin="157,0,0,10" TextWrapping="Wrap" Text="" Width="55" Height="23" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <TextBox x:Name="itemPrice" HorizontalAlignment="Left" Margin="217,0,0,10" TextWrapping="Wrap" Text="" Width="94" Height="23" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <TextBox x:Name="itemWhoOwn" HorizontalAlignment="Left" Margin="316,0,0,10" TextWrapping="Wrap" Text="" Width="39" Height="23" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Foreground="Gray" Background="#FFF9F9F9"/>
+                    <Button x:Name="addProduct" Content="Add" Margin="0,0,10,10" HorizontalAlignment="Right" Width="126" Height="22" VerticalAlignment="Bottom" Click="AddItem"/>
+                    <Label Content="Barcode" HorizontalAlignment="Left" Margin="10,0,0,33" VerticalAlignment="Bottom" Width="73" Height="21" FontSize="10" Foreground="#FF555555"/>
+                    <Label Content="Quantity" HorizontalAlignment="Left" Margin="157,0,0,31" VerticalAlignment="Bottom" Width="73" Height="23" FontSize="10" Foreground="#FF555555"/>
+                    <Label Content="Price" HorizontalAlignment="Left" Margin="217,0,0,33" VerticalAlignment="Bottom" Width="73" Height="21" FontSize="10" Foreground="#FF555555"/>
+                    <Label Content="Who Owns" HorizontalAlignment="Left" Margin="316,0,0,33" VerticalAlignment="Bottom" Width="70" Height="21" FontSize="10" Foreground="#FF555555"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

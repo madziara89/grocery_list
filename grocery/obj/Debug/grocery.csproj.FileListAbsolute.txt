@@ -1,0 +1,17 @@
+C:\Users\Admin\source\repos\grocery_list\grocery\bin\Debug\grocery.exe.config
+C:\Users\Admin\source\repos\grocery_list\grocery\bin\Debug\grocery.exe
+C:\Users\Admin\source\repos\grocery_list\grocery\bin\Debug\grocery.pdb
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\App.g.cs
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery_MarkupCompile.cache
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery_MarkupCompile.lref
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\MainWindow.baml
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery.g.resources
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery.Properties.Resources.resources
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery.csproj.GenerateResource.Cache
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery.exe
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery.pdb
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\grocery.csprojResolveAssemblyReference.cache
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\Views\receiptItemView.g.cs
+C:\Users\Admin\source\repos\grocery_list\grocery\obj\Debug\Views\receiptItemView.baml
